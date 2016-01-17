@@ -1,8 +1,17 @@
 body{
+	font:300 17px/1.58 "Raleway", Arial, sans-serif;
+	color: #262626;
+}
+
 
 }
 
 /* Typography */
+h1,h2,h3,h4,h5,h6 {
+	font-weight:700;
+
+}
+
 a,
 input[type="submit"],
 input[type="button"],
@@ -16,12 +25,22 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	background-color: rgb(255, 96, 51);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	width: 200px;
+	height: 55px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 55px;
+	text-align: center;
+	color:#ffffff;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
-
+	background-color: rgba(255, 96, 51, 0.7);
 }
 
 input[type="text"],
@@ -51,7 +70,157 @@ textarea {
 }
 
 /* Layout */
-.ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+.ba-grid + .ba-grid {
+	margin-top: 30px;
 }
+.ba-grid > [class*="ba-width-"] {
+	float: left;
+	padding-left: 30px;
+}
+.ba-grid {
+	margin-left: -30px;
+}
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+.ba-fresh {
+	min-height: 100vh;
+	background:#FFF url(../img/fresh.jpg) 50%;
+	background-size: cover;
+	position: relative;
+}
+.ba-header {
+	padding-top: 50px;
+}
+/*ba-menu*/
+.ba-menu {
+	margin: 8px 0 0;
+}
+.ba-menu li{
+	display: inline-block;
+	margin-left:30px;
+	padding-top: 4px;
+}
+.ba-menu li a {
+	text-decoration: none;
+	font-weight:700;
+	color:inherit;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+.ba-menu .active {
+	border-top: 3px solid #ff6033;
+}
+.ba-menu li a:hover {
+	color:#ff6033;
+}
+/*ba-banner */
+.ba-banner {
+	padding-top: 255px;
+	max-width: 370px;
+}
+.ba-banner__title {
+	margin: 0;
+	font-size: 60px;
+	line-height: 42px;
+	font-weight:900;
+}
+.ba-banner p {
+	margin:30px 0 30px;
+}
+.ba-fresh__scroll {
+	position: absolute;
+	left:calc(50% - 12px);
+	top:90vh;
+}
+
+/*ba-about*/
+.ba-about {
+	padding: 73px 0;
+	background-color:  #00c4c4;
+	background: radial-gradient(circle farthest-side at 50%, rgba(0, 196, 196, 0.9) 0%, rgba(0, 183, 183, 0.9) 31%, rgba(0, 173, 173, 0.9) 67%, rgba(0, 156, 156, 0.9) 100%);
+}
+.ba-about__img {
+	margin-left: -50px;
+}
+.ba-about__text {
+	color:#ffffff;
+	margin-left: -50px;
+}
+.ba-about__title {
+	font-size: 90px;
+	line-height: 65px;
+	margin: 0;
+	padding: 150px 0 17px;
+}
+.ba-about__text p {
+	margin-top: 12px;
+	margin-bottom: 0;
+}
+
+/*ba-services*/
+.ba-services {
+	padding: 100px 0 151px;
+	background-color:#70bfff;
+}
+.ba-services__list {
+	margin-top: 80px;
+	padding-left: 100px;
+}
+.ba-services__list li{
+	width: 400px;
+	height: 100px;
+	padding-left:32px;
+	margin-bottom: 20px;
+	vertical-align: middle;
+	background-color: #ffffff;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+	display: table;
+}
+.ba-services__text {
+	display: table-cell;
+	width: 240px;
+	line-height: 27px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 20px;
+	font-weight:700;
+}
+.ba-services__text:after {
+	content: "";
+	display: block;
+	top:0;
+	left:300px;
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	background: #9d9d9d;
+}
+.ba-services__img {
+	position: absolute;
+	top:27%;
+	left:325px;
+}
+.ba-services__tomatoes {
+	position: relative;
+	background: #70bfff url(../img/tomatoes.png) 50%;
+	background-size: cover;
+	margin-left: 138px;
+	height: 527px;
+	width: 462px;
+}
+.ba-services__title {
+	position: absolute;
+	top:calc(50% - 33px);
+	left:-94px;
+	font-size: 90px;
+	color:#fff;
+	line-height: 66px;
+	margin: 0;
+}
+
+
+
