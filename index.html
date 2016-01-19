@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -29,12 +30,12 @@
 					</a>
 					<nav class="ba-float-right">
 						<ul class="ba-menu">
-							<li class="active"><a href="#home">HOME</a></li>
+							<li><a href="#home" class="active">HOME</a></li>
 							<li><a href="#about">ABOUT</a></li>
 							<li><a href="#services">SERVICES</a></li>
-							<li><a href="#">GALLERY</a></li>
-							<li><a href="#">BLOG</a></li>
-							<li><a href="#">CONTACT</a></li>
+							<li><a href="#gallery">GALLERY</a></li>
+							<li><a href="#blog">BLOG</a></li>
+							<li><a href="#contact">CONTACT</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -45,28 +46,27 @@
 					<a class="ba-button" href="#">Get Free Now</a>
 				</div>
 				<!-- END ba-banner -->
-				<a href="#about"><img class="ba-fresh__scroll" src="img/scroll.png" alt="scroll"></a>
+				<a href="#about" class="ba-fresh__scroll"><img src="img/scroll.png" alt="scroll"></a>
 			</div>
 		</div>
 		<!-- END ba-fresh -->
 		<main role="main">
 			<section class="ba-about">
-				<a id="about">
-					<div class="ba-container">
-						<div class="ba-grid">
-							<div class="ba-width-3-5">
-								<img class="ba-about__img" src="img/raspberries.png" alt="raspberries">
-							</div>
-							<div class="ba-width-2-5">
-								<div class="ba-about__text">
-									<h1 class="ba-about__title">About Us</h1>
-									<p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. </p>
-									<p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-								</div>
+				<a id="about"></a>
+				<div class="ba-container">
+					<div class="ba-grid">
+						<div class="ba-width-3-5">
+							<img class="ba-about__img" src="img/raspberries.png" alt="raspberries">
+						</div>
+						<div class="ba-width-2-5">
+							<div class="ba-about__text">
+								<h1 class="ba-about__title">About Us</h1>
+								<p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. </p>
+								<p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
 							</div>
 						</div>
 					</div>
-				</a>
+				</div>
 			</section>
 
 			<section class="ba-services">
@@ -75,29 +75,156 @@
 						<div class="ba-grid">
 							<div class="ba-width-1-2">
 								<ul class="ba-services__list">
-									<li><span class="ba-services__text">Online Shopping</span>
-										<img class="ba-services__img" src="img/icons/icon-cart.svg" alt="icon-cart"></li>
-										<li><span class="ba-services__text">Quality Product</span>
-											<img class="ba-services__img" src="img/icons/icon-quality.svg" alt="icon-quality"></li>
-											<li><span class="ba-services__text">Domestic & International Delivery</span>
-												<img class="ba-services__img" src="img/icons/icon-earth.svg" alt="icon-earth"></li>
-												<li><span class="ba-services__text">Well Organized</span>
-													<img class="ba-services__img" src="img/icons/icon-carrot.svg" alt="icon-carrot"></li>
+									<li><h5 class="ba-services__text">Online Shopping</h5>
+										<span class="ba-services__img ba-services__img--cart"></span></li>
+										<li><h5 class="ba-services__text">Quality Product</h5>
+											<span class="ba-services__img ba-services__img--quality"></span></li>
+											<li><h5 class="ba-services__text">Domestic & International Delivery</h5>
+												<span class="ba-services__img ba-services__img--earth"></span></li>
+												<li><h5 class="ba-services__text">Well Organized</h5>
+													<span class="ba-services__img ba-services__img--carrot"></span></li>
 												</ul>
 											</div>
 											<div class="ba-width-1-2 ba-services__tomatoes">
 												<h1 class="ba-services__title">Our Services</h1>
 											</div>
 										</div>
+									</div>
+								</a>
+							</section>
+
+							<section class="ba-gallery">
+								<a id="gallery">
+									<div class="ba-container cf">
+										<div class="ba-gallery__text">
+											<h1 class="ba-gallery__title">Gallery</h1>
+											<p class="ba-description">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										</div>
-										</a>
+										<img class="ba-gallery__img ba-gallery--peach ba-float-left" src="img/gallery/peach.jpg" alt="peach">
+										<img class="ba-gallery__img ba-gallery--blueberries ba-float-left" src="img/gallery/blueberries.jpg" alt="blueberries">
+										<img class="ba-gallery__img ba-gallery--blackberry ba-float-left" src="img/gallery/blackberry.jpg" alt="blackberry">
+										<div class="ba-grid">
+											<div class="ba-width-1-2">
+												<img class="ba-gallery__img" src="img/gallery/milk.jpg" alt="milk">
+											</div>
+											<div class="ba-width-1-2">
+												<img class="ba-gallery__img" src="img/gallery/persimmon.jpg" alt="persimmon">
+											</div>
+										</div>
+										<a class="ba-button ba-button--gallery" href="#">View More</a>
+									</div>
+								</a>
+							</section>
 
-								</section>
+							<section class="ba-subscribe">
+								<div class="ba-container">
+									<div class="ba-width-1-2">
+										<h4>Subscribe To Us</h4>
+										<p class="ba-subscribe__description">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+									</div>
+									<form class="ba-subscribe__form" action="#" method="post">
+										<input  class="ba-subscribe__input"type="email" name="email" required placeholder="Your email address...">
+										<input class="ba-button" type="submit" value="Subscribe">
+									</form>
+								</div>
+							</section>
 
-							</main>
-							<footer class="ba-footer">
+							<section class="ba-blog">
+								<a id="blog">
+									<div class="ba-container">
+										<div class="ba-blog__text">
+											<h1 class="ba-blog__title">Blog</h1>
+											<p class="ba-description">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+										</div>
+										<div class="ba-grid">
+											<div class="ba-width-1-3">
+												<div class="ba-blog__img ba-blog--smoothies">
+													<div class="ba-blog__label">
+														<h5>Green Smoothies: Too Much of a Good Thing?</h5>
+														<p class="ba-blog__time">By Auskteez - 2 hours ago</p>
+													</div>
+													<date class="ba-blog__date">20<br>
+														<span>NOV</span>
+													</date>
+												</div>
+											</div>
+											<div class="ba-width-1-3">
+												<div class="ba-blog__img ba-blog--grow">
+													<div class="ba-blog__label">
+														<h5>Growing Food and a “Thirst” for Innovation</h5>
+														<p class="ba-blog__time">By Auskteez - 3 hours ago</p>
+													</div>
+													<date class="ba-blog__date">14<br>
+														<span>NOV</span>
+													</date>
+												</div>
+											</div>
+											<div class="ba-width-1-3">
+												<div class="ba-blog__img ba-blog--perticides">
+													<div class="ba-blog__label">
+														<h5>Pesticides & Food: What You Need to Know</h5>
+														<p class="ba-blog__time">By Auskteez - 6 hours ago</p>
+													</div>
+													<date class="ba-blog__date">10<br>
+														<span>NOV</span>
+													</date>
+												</div>
+											</div>
+										</div>
+										<a class="ba-button ba-button--blog" href="#">View More</a>
+									</div>
+								</a>
+							</section>
+							<section class="ba-contact">
+								<a id="contact"></a>
+								<div class="ba-container">
+									<div class="ba-contact__text">
+										<h1>Contact</h1>
+										<p class="ba--contact__description">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+									</div>
 
-							</footer>
-							<script src="js/main.js"></script>
-						</body>
-						</html>
+									<div class="ba-grid">
+										<div class="ba-width-1-2">
+											<form class="ba-contact__form" action="#" method="post">
+												<input type="text" name="name" required placeholder="Your name">
+												<input type="email" name="email" required placeholder="Your email">
+												<input type="tel" name="tel" required placeholder="Your phone number...">
+
+												<textarea id="message-id" name="message" required placeholder="Your message"></textarea>
+												<input class="ba-button" type="submit" value="Send">
+											</form>
+										</div>
+										<div class="ba-width-1-2">
+											<div class="ba-contact__info-wrap">
+												<h6 class="ba-contact__info-title">Address</h6>
+												<address class="ba-contact__info ba-contact--address">123 City name, Street, City, Country</address>
+												<h6 class="ba-contact__info-title">Email</h6>
+												<a href="mailto:cahee@domain.com" class="ba-contact__info">cahee@domain.com</a>
+												<h6 class="ba-contact__info-title">Phone</h6>
+												<a href="tel:+0123456789" class="ba-contact__info">+012 345 6789</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</section>
+						</main>
+
+						<footer class="ba-footer">
+							<div class="ba-container">
+								<div class="ba-grid">
+									<div class="ba-width-1-3">
+										<p class="ba-footer--reserved">© 2015 Company. All right reserved.</p>
+									</div>
+									<div class="ba-width-1-3">
+										<p class="ba-footer--logo">Cahee</p>
+									</div>
+									<div class="ba-width-1-3">
+										<p class="ba-footer--author">Made with <span class="ba-footer--love">love</span> by Auskteez</p>
+									</div>
+								</div>
+							</div>
+						</footer>
+						<script src="js/main.js"></script>
+					</body>
+					</html>
