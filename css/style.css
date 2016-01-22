@@ -12,7 +12,7 @@ h1 {
 	font-size: 90px;
 }
 h2 {
-	font-size: 60px;
+	font-size: 90px;
 }
 h3 {
 	font-size: 50px;
@@ -97,7 +97,7 @@ textarea {
 
 /* Layout */
 .ba-grid + .ba-grid {
-	margin-top: 30px;
+	margin-top: 25px;
 }
 .ba-grid > [class*="ba-width-"] {
 	float: left;
@@ -121,8 +121,12 @@ textarea {
 .ba-fresh__scroll {
 	position: absolute;
 	left:calc(50% - 12px);
-	bottom: 65px;
+	bottom: 69px;
 	transition: transform .2s ease-in;
+	height: 40px;
+	width: 24px;
+	background: url(../img/scroll.png) 50%;
+	background-size: cover;
 }
 .ba-fresh__scroll:hover {
 	transform: translateY(-5px);
@@ -171,6 +175,7 @@ textarea {
 }
 .ba-banner__title {
 	font-weight:900;
+	font-size: 60px;
 }
 .ba-banner p {
 	padding:20px 0 30px;
@@ -203,12 +208,12 @@ textarea {
 	padding: 98px 0 130px;
 	background-color:#70bfff;
 }
-.ba-services__list {
+.ba-services-list {
 	list-style: none;
 	margin-top: 80px;
 	padding-left: 100px;
 }
-.ba-services__list li{
+.ba-services-list li{
 	max-width: 400px;
 	height: 100px;
 	font-size: 0;
@@ -273,29 +278,21 @@ textarea {
 	margin: 0 auto;
 }
 .ba-gallery__title {
-	margin: 0;
+	margin-bottom: 28px;
 }
 .ba-description {
-	padding: 28px 0 43px;
-	margin: 0;
+	margin-bottom: 44px;
+
 }
 .ba-gallery__img {
 	background-color: #00c4c4;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
-.ba-gallery--blueberries,
-.ba-gallery--blackberry {
-	margin-left: 30px;
-}
 .ba-gallery--blueberries {
-	margin-bottom: 30px;
-}
-.ba-gallery--blackberry,
-.ba-gallery--peach {
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 }
 .ba-button--gallery {
-	margin-top: 46px;
+	margin-top: 44px;
 	background-color: rgb(85, 133, 162);
 }
 .ba-button--gallery:hover{
@@ -308,9 +305,12 @@ textarea {
 	background-size: cover;
 	padding: 140px 0 163px;
 }
+.ba-subscribe__title {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
 .ba-subscribe__description {
-	margin:0;
-	padding: 20px 0 30px;
+	margin-bottom: 29px;
 }
 .ba-subscribe__form {
 	position: relative;
@@ -318,10 +318,14 @@ textarea {
 .ba-subscribe__input {
 	width: 570px;
 }
+.ba-subscribe__input:focus {
+	outline: none;
+	border-color: rgb(150, 185, 44);
+}
 .ba-subscribe__form [type="submit"] {
 	border: none;
 	width:170px;
-	margin-left: 28px;
+	margin-left: 25px;
 	background-color: rgb(150, 185, 44);
 }
 .ba-subscribe__form [type="submit"]:hover{
@@ -342,23 +346,18 @@ textarea {
 	max-width: 570px;
 	margin: 0 auto;
 }
-.ba-blog__img {
-	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
-	background-size: cover;
-	padding: 210px 0 100px;
+.ba-blog__title {
+	margin-bottom: 28px;
+}
+.ba-blog__wrap {
 	position: relative;
 }
-.ba-blog--smoothies {
-	background: #FFF url(../img/blog/smoothies.jpg) 50%;
-
+.ba-blog__wrap a {
+	color:inherit;
 }
-.ba-blog--grow {
-	background: #FFF url(../img/blog/grow.jpg) 50%;
+.ba-blog__img {
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
-.ba-blog--perticides {
-	background: #FFF url(../img/blog/perticides.jpg) 50%;
-}
-
 .ba-blog__time {
 	font-size:13px;
 }
@@ -367,17 +366,21 @@ textarea {
 	height: 50%;
 	top:50%;
 	background-image: linear-gradient(rgba(38,38,38,0), rgba(38,38,38,0.9));
-	padding: 49px 15px 10px 22px;
+	padding: 46px 15px 0 20px;
 	text-align: left;
 }
 .ba-blog__label h5 {
 	font-weight:700;
 	line-height: 1.3;
 }
+.ba-blog__label h5:hover {
+	color:rgb(247, 43, 59);
+	transition: color .3s ease-in;
+}
 .ba-blog__date {
 	position: absolute;
 	top:29px;
-	left: 31px;
+	left: 59px;
 	background-color: rgba(38, 38, 38, 0.502);
 	font-size: 32px;
 	font-weight:900;
@@ -388,9 +391,10 @@ textarea {
 }
 .ba-blog__date span {
 	font-size: 21px;
+	display: block;
 }
 .ba-button--blog {
-	margin-top: 50px;
+	margin-top: 43px;
 	background-color: rgb(247, 43, 59);
 }
 .ba-button--blog:hover {
@@ -408,18 +412,18 @@ textarea {
 	width: 370px;
 	margin: 0 auto;
 }
+.ba-contact__text h2 {
+	margin-bottom: 28px;
+}
 .ba--contact__description {
-	margin:0;
-	padding: 28px 0 41px;
+	margin-bottom: 41px;
 }
 .ba-contact__form input::-webkit-input-placeholder {color:#fff}
 .ba-contact__form input:-moz-placeholder {color:#fff}
 .ba-contact__form textarea::-webkit-input-placeholder {color:#fff}
 .ba-contact__form textarea:-moz-placeholder {color:#fff}
 
-.ba-contact__form [type="text"],
-.ba-contact__form [type="email"],
-.ba-contact__form [type="tel"],
+.ba-contact__form input,
 .ba-contact__form textarea {
 	width: 500px;
 	border: none;
@@ -432,9 +436,7 @@ textarea {
 .ba-contact__form [type="text"] {
 	margin-top: 2px;
 }
-.ba-contact__form [type="text"]:focus,
-.ba-contact__form [type="email"]:focus,
-.ba-contact__form [type="tel"]:focus,
+.ba-contact__form input:focus,
 .ba-contact__form textarea:focus {
 	outline:none;
 	background-color: #00c4c4;
@@ -459,6 +461,8 @@ textarea {
 }
 .ba-contact__form [type="submit"]:focus {
 	outline:none;
+	transition: background .3s ease-in;
+	transition: font-weight .3s ease-in;
 }
 .ba-contact__info-wrap {
 	padding-left: 70px;
@@ -491,10 +495,7 @@ textarea {
 	padding-top: 6px;
 }
 .ba-footer--logo {
-	font-family: "Pacifico";
-	font-size: 25px;
-	margin: 0;
-	text-align: center;
+text-align: center;
 }
 .ba-footer--author {
 	font-size: 15px;
