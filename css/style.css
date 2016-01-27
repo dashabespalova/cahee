@@ -394,6 +394,19 @@ textarea {
 		margin-bottom: 25px;
 	}
 }
+@media (max-width:816px) {
+	.ba-gallery--blueberries {
+		margin-bottom: 25px;
+		margin-right: 25px;
+	}
+}
+@media (max-width:791px) {
+	.ba-gallery--blueberries {
+		margin-bottom: 25px;
+		margin-right: 0;
+
+	}
+}
 @media (max-width:767px) {
 	.ba-gallery__title {
 		font-size: 50px;
